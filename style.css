@@ -246,7 +246,7 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/* About Content Wrapper */
+/* About Content  */
 .about-content {
     display: flex;
     justify-content: space-between;
@@ -328,7 +328,7 @@ nav ul li a:hover {
     margin: auto;
 }
 
-/* Individual Blog Post Card */
+/* Individual Blog p Card */
 .post {
     background: white;
     padding: 20px;
@@ -376,7 +376,7 @@ nav ul li a:hover {
 
 .post .btn:hover {
     background: #1768aa;
-    /* Darker orange on hover */
+    
 }
 
 /* Hover Effect */
@@ -384,6 +384,107 @@ nav ul li a:hover {
     transform: translateY(-5px);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
 }
+
+/* ....Testimonial Section... */
+.testimonial {
+    background: #f3f0f0;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Section Title */
+.testimonial h2 {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 30px;
+}
+
+/* Testimonial Slider  */
+.testimonial-slider {
+    overflow: hidden;
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+}
+
+/* Testimonial Container */
+.testimonial-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individual Testimonial Card */
+.testimonial-card {
+    display: flex;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 100%;
+    /* box-sizing: border-box; */
+}
+
+/* Customer Image */
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Customer Name */
+.testimonial-card span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+    
+}
+
+/* Testimonial Text */
+.testimonial-card p {
+    padding-top: 30px;
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+
+
+/* Navigation Buttons */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ff6600;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 12px 16px;
+    border-radius: 50%;
+    transition: background 0.3s;
+    z-index: 10;
+}
+
+/* .testimonial .testi-btn{
+    align-items: center;
+} */
+
+.prev-btn:hover, .next-btn:hover {
+    background: #e65c00;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
 
 
 
@@ -454,5 +555,12 @@ nav ul li a:hover {
 
     .blog h2 {
         font-size: 2rem
+    }
+}
+
+/*for testimonial section*/
+@media (max-width: 768px) {
+    .testimonial-slider {
+        max-width: 90%;
     }
 }
